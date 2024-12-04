@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box {
+            margin-left: 50px;
+            text-align: left;
+            margin-top: 20%;
+            width: 300px;
+            height: 100%;
+            display: flex;
+            /* text-align: center;
+            justify-content: center;
+            align-items: center; */
+            flex-direction: column;
+        }
+
+        .main-text {
+            font-size: 2rem;
+            color: #000000;
+            font-weight: bolder;
+            text-align: left;
+            text-shadow: 2px 2px 4px #aaaaaa;
+        }
+
+        .main {
+            background-image: url(./img/background.png);
+            background-size: cover;
+            display: flex;
+            height: 100vh;
+            justify-content: start;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul,
+        li,
+        a {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <h1 class="main-text">Welcome to QR Code Project</h1>
+            <br>
+            <div style="text-align: left;">
+                <b>Explore the features of this project:</b>
+                <ol style="text-align: left;">
+                    <li>QR Code Generator</li>
+                    <li>QR Code History</li>
+                    <li>QR Code Customization</li>
+                </ol>
+            </div>
+            <nav style="text-align: left;">
+                <a href=" scanner.html">QR Code Scanner</a> <br>
+                <a href="generator.html">QR Code Generator</a>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>

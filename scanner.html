@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
+    <script defer src="./src/scanner.js"></script>
+    <style>
+        body {
+            background-image: url(./img/background.png);
+            background-size: cover;
+            background-position: center top 200px;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            color: white;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(16, 14, 14, 0.529);
+        }
+
+        #scan-result {
+            border: 1px solid white;
+            padding: 15px;
+            width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>QR Code Scanner</h1>
+        <div id="qr-reader"></div>
+        <div style="margin:0 auto; width:300px">
+            <input type="file" id="file-input" accept="image/*">
+        </div>
+        <p><strong>Scanned Result:</strong> <br>
+        <div id="scan-result">None</div>
+        </p>
+        <br><br>
+        <button id="scan-btn">Start Scanning</button>
+        <br><br>
+        <a href="index.html">Back to Home</a>
+    </div>
+</body>
+
+</html>
