@@ -11,6 +11,8 @@ QR Scanner is a simple and efficient application designed to scan and decode QR 
 - User-friendly interface
 - Cross-platform compatibility
 
+![image](https://github.com/user-attachments/assets/76b9b0bc-6229-4888-a089-c0eeddbd4a99)
+
 ## Installation
 
 To install and run the QR Scanner application, follow these steps:
